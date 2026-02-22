@@ -123,7 +123,7 @@ All audio is:
 
 ### Requirements
 
-- Python 3.9+
+- Python 3.10 (not above because this will break RVC)
 - CUDA-enabled GPU (recommended)
 - FFmpeg
 - PyTorch (CUDA build)
@@ -149,7 +149,7 @@ Convert and normalize audio:
 ```bash
 python scripts/preprocess_audio.py \
   --input data/male_kid_raw \
-  --output data_processed/male_kid
+  --exp_name male_kid
 ```
 This step:
 - converts to WAV (48kHz, mono)
